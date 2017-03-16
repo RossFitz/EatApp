@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+
+    <ion-pane>
+
+      <ion-header-bar class="appOrange">
+        <button class="icon ion-navicon button appOrange"></button>
+        <h1 class="title"><img src="img/Eat-In-Logo.png" alt="Logo"></h1>
+        <button class="icon ion-gear-a button appOrange"></button>
+      </ion-header-bar>
+      
+      <ion-content class="padding has-subheader">
+      <ion-side-menus class="slide-menu">
+      <!-- Left menu -->
+      <ion-side-menu side="left" class="slide-menu">
+      </ion-side-menu>
+
+      <ion-side-menu-content class="slide-menu">
+      <!-- Main content, usually <ion-nav-view> -->
+      <p>lorem ipsum</p>
+      </ion-side-menu-content>
+
+      <!-- Right menu -->
+      <ion-side-menu side="right" class="slide-menu">
+      </ion-side-menu>
+
+      </ion-side-menus>
+
+      <div class="list">
+        <a href="#" class="item">Item 1</a>
+        <a href="#" class="item">Item 2</a>
+        <a href="#" class="item">Item 3</a>
+        <a href="#" class="item">Item 4</a>
+      </div>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sem erat, interdum id ex sed, rhoncus convallis ipsum. Vestibulum nibh eros, facilisis quis tempus lacinia, consequat vel ex. Duis vitae rhoncus odio, sed malesuada mi.</p>
+
+      </ion-content>
+
+      <ion-footer-bar class="bar-dark">
+      
+        <div class="button-bar">
+        <button class="icon ion-social-twitter button button-calm"></button>
+        <button class="icon ion-social-facebook button button-positive"></button>
+        <button class="icon ion-social-youtube button button-assertive"></button>
+      </div>
+      </ion-footer-bar>
+    </ion-pane>
+  </body>
+</html>
